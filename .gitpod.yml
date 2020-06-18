@@ -1,0 +1,5 @@
+image:
+  file: Dockerfile
+vscode:
+  extensions:
+    - betterthantomorrow.calva@2.0.85:3xoOa+PKIAT1KeoQ8mF/OQ==
