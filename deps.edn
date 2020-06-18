@@ -27,7 +27,10 @@
                                com.clojure-goes-fast/clj-async-profiler {:mvn/version "0.4.1"}}
                   :jvm-opts ["-server"
                              "-Xmx4096m"
-                             "-Dclojure.compiler.direct-linking=true"]}}
+                             "-Dclojure.compiler.direct-linking=true"]}
+           :dev {:extra-deps {nrepl {:mvn/version "0.7.0"}
+                              cider/cider-nrepl {:mvn/version "0.25.2"}}
+                 :main-opts ["-m" "nrepl.cmdline" "--middleware" "[cider.nrepl/cider-middleware]"]}}
  :deps {org.clojure/clojure {:mvn/version "1.10.1"}
         borkdude/sci {:git/url "https://github.com/borkdude/sci"
                       :sha "eb97e01a5913fb81859da814ba55a25b807dd6cc"}

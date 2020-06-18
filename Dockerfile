@@ -6,3 +6,4 @@ RUN bash -c ". /home/gitpod/.sdkman/bin/sdkman-init.sh \
 
 RUN bash -c "brew update && brew install leiningen"
 RUN bash -c "brew tap linuxbrew/xorg && brew install boot-clj"
+RUN bash -c "brew install clojure/tools/clojure"
